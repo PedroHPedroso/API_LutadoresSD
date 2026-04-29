@@ -1,4 +1,4 @@
-package API_UenpBet.model;
+package demo.model;
 public class Lutador {
 
     private int id;

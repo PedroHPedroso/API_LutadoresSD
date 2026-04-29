@@ -1,8 +1,8 @@
-package API_UenpBet;
+package demo;
 
-import API_UenpBet.Factory.LutadorStrategyFactory;
-import API_UenpBet.model.Lutador;
-import API_UenpBet.Strategy.LutadorStrategy;
+import demo.Factory.LutadorStrategyFactory;
+import demo.model.Lutador;
+import demo.Strategy.LutadorStrategy;
 
 public class Main {
 

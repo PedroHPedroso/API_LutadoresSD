@@ -1,6 +1,6 @@
-package API_UenpBet.Strategy;
+package demo.Strategy;
 
-import API_UenpBet.model.Lutador;
+import demo.model.Lutador;
 
 public interface LutadorStrategy {
     void executar(Lutador lutador);

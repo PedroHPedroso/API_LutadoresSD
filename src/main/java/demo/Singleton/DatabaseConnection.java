@@ -1,4 +1,4 @@
-package API_UenpBet.Singleton;
+package demo.Singleton;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

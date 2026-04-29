@@ -1,6 +1,6 @@
-package API_UenpBet.Factory;
+package demo.Factory;
 
-import API_UenpBet.Strategy.*;
+import demo.Strategy.*;
 
 public class LutadorStrategyFactory {
 

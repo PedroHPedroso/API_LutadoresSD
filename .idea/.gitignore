@@ -1,0 +1,12 @@
+# Arquivos compilados
+target/
+*.class
+
+# Arquivos do IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# Arquivos de log e banco de dados local
+*.log
+lutadores.db

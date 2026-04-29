@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="71a4580b-b194-41a1-a2db-f4c29d86c7c8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Factory/LutadorStrategyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/Factory/LutadorStrategyFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Singleton/DatabaseConnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Singleton/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/Singleton/DatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Strategy/AtualizarLutadorStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/Strategy/AtualizarLutadorStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Strategy/BuscarLutadorStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/Strategy/BuscarLutadorStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Strategy/CadastrarLutadorStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/Strategy/CadastrarLutadorStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Strategy/DeletarLutadorStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/Strategy/DeletarLutadorStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Strategy/ListarLutadoresStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/Strategy/ListarLutadoresStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Strategy/LutadorStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/Strategy/LutadorStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Lutador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Lutador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/model/Lutador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "LeandroFNeto"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/PedroHPedroso/API_LutadoresSD.git",
+    "accountId": "ad19312d-20cc-47a6-afa7-9598cf541432"
+  }
+}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="3D2ypGUckjjtMfOifeBdn384r5m" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "C:/Projeto-futuro-junior/sistemas distribuido/src/src/main/java/br/com/uenpbet/Main.java",
+    "run.code.analysis.last.selected.profile": "pProject Default"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projeto-futuro-junior\sistemas distribuido\src" />
+      <recent name="C:\Projeto-futuro-junior\sistemas distribuido" />
+      <recent name="C:\Projeto-futuro-junior\sistemas distribuido\src\src\main\java\br\com\uenpbet" />
+    </key>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="71a4580b-b194-41a1-a2db-f4c29d86c7c8" name="Changes" comment="" />
+      <created>1777494639321</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1777494639321</updated>
+    </task>
+    <servers />
+  </component>
+</project>

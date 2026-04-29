@@ -1,7 +1,7 @@
-package API_UenpBet.Strategy;
+package demo.Strategy;
 
-import API_UenpBet.Singleton.*;
-import API_UenpBet.model.Lutador;
+import demo.Singleton.*;
+import demo.model.Lutador;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
