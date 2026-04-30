@@ -1,0 +1,20 @@
+services:
+  db:
+    image: postgres:15
+    container_name: postgres-db
+    environment:
+      POSTGRES_DB: uenp_bet
+      POSTGRES_USER: leandro
+      POSTGRES_PASSWORD: 12345
+    ports:
+      - "5433:5432" # Porta 5433 no Windows pra não dar conflito se você já tiver Postgres instalado
+
+  api-lutadores:
+    build: .
+    container_name: api-lutadores
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/uenp_bet
