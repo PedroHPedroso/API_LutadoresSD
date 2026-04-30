@@ -5,24 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71a4580b-b194-41a1-a2db-f4c29d86c7c8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/controller/LutadorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/controller/LutadorRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/Factory/LutadorStrategyFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/Singleton/DatabaseConnection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/Strategy/AtualizarLutadorStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/Strategy/BuscarLutadorStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/Strategy/CadastrarLutadorStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/Strategy/DeletarLutadorStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/Strategy/ListarLutadoresStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/Strategy/LutadorStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/model/Lutador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/model/Lutador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
