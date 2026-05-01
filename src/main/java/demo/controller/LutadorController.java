@@ -36,4 +36,33 @@ public class LutadorController {
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }
+
+    @PutMapping("/{id}")
+    @Operation(summary = "Atualiza os dados de um lutador existente")
+    public ResponseEntity<Lutador> atualizar(@PathVariable int id, @RequestBody Lutador lutadorAtualizado) {
+        return repository.findById(id)
+                .map(lutador -> {
+                    // Atualizando todos os campos baseados na sua classe Lutador.java
+                    lutador.setNome(lutadorAtualizado.getNome());
+                    lutador.setCategoria(lutadorAtualizado.getCategoria());
+                    lutador.setApelido(lutadorAtualizado.getApelido());
+                    lutador.setArte(lutadorAtualizado.getArte());
+
+                    Lutador salvo = repository.save(lutador);
+                    return ResponseEntity.ok(salvo);
+                })
+                .orElse(ResponseEntity.notFound().build());
+    }
+
+    @DeleteMapping("/{id}")
+    @Operation(summary = "Remove um lutador do sistema")
+    public ResponseEntity<Void> deletar(@PathVariable int id) {
+        return repository.findById(id)
+                .map(lutador -> {
+                    repository.delete(lutador);
+                    // Status 204 No Content: Sucesso, mas sem corpo na resposta
+                    return ResponseEntity.noContent().<Void>build();
+                })
+                .orElse(ResponseEntity.notFound().build());
+    }
 }
