@@ -1,8 +1,8 @@
-#  API Lutadores - Sistemas Distribuídos
+# API Lutadores - Sistemas Distribuídos
 
 Esta é uma API desenvolvida para o gerenciamento de lutadores, integrando o ecossistema **Java** com **Spring Boot** e persistência em **PostgreSQL**, totalmente orquestrada via **Docker**.
 
-O projeto foi construído como trabalho um no curso de Ciência da Computação da **UENP**, focando em arquitetura escalável e sistemas distribuídos.
+O projeto foi construído como trabalho para o curso de Ciência da Computação da **UENP**, focando em arquitetura escalável e sistemas distribuídos.
 
 ## Tecnologias e Ferramentas
 
@@ -14,18 +14,39 @@ O projeto foi construído como trabalho um no curso de Ciência da Computação 
 
 ---
 
-##  Como Executar o Projeto
+## Hospedagem e Deploy (Render)
 
-A aplicação está "dockerizada", o que significa que o ambiente de banco de dados e o servidor de aplicação sobem em sincronia.
+A aplicação está hospedada no **Render** e utiliza deploy automatizado via **Docker**, garantindo que o ambiente de produção seja idêntico ao de desenvolvimento.
 
-### Pré-requisitos
+### Configuração de Ambiente
+Para que a aplicação conecte corretamente ao banco de dados e exponha a porta necessária, as seguintes variáveis de ambiente devem ser configuradas no painel do Render (sem expor dados sensíveis no código-fonte):
+
+* **`SPRING_DATASOURCE_URL`**: URL de conexão JDBC (Ex: `jdbc:postgresql://<HOSTNAME>:<PORTA>/<NOME_DO_BANCO>`).
+* **`SPRING_DATASOURCE_USERNAME`**: Nome de usuário do banco de dados.
+* **`SPRING_DATASOURCE_PASSWORD`**: Senha de acesso ao banco de dados.
+* **`PORT`**: Porta interna da aplicação (definida como `8080`).
+
+---
+
+## Como Executar e Testar o Projeto
+
+### 1. Acesso Online (Swagger)
+A API conta com documentação interativa via Swagger UI para teste imediato de todos os métodos (GET, POST, PUT, DELETE) diretamente pelo navegador:
+
+🔗 **[Acessar Swagger no Render](https://api-lutadoressd.onrender.com/swagger-ui/index.html)**
+
+> **Dica de Uso:** No Swagger, clique em um endpoint, selecione **"Try it out"**, preencha os campos e clique em **"Execute"** para ver a resposta em tempo real.
+
+### 2. Execução Local (Docker)
+A aplicação está totalmente "dockerizada". Ao subir os containers, o banco de dados PostgreSQL e o servidor de aplicação são iniciados em sincronia.
+
+#### Pré-requisitos
 * **Docker** e **Docker Compose** instalados.
 
-### Passo a Passo
+#### Passo a Passo
 1. **Clone o repositório:**
    ```bash
-   git clone [https://github.com/PedroHPedroso/API_LutadoresSD.git]
-   ````
+   git clone [https://github.com/PedroHPedroso/API_LutadoresSD.git](https://github.com/PedroHPedroso/API_LutadoresSD.git)
 
 **Como testar:**
 
