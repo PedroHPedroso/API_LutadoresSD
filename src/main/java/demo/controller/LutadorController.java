@@ -42,11 +42,29 @@ public class LutadorController {
     public ResponseEntity<Lutador> atualizar(@PathVariable int id, @RequestBody Lutador lutadorAtualizado) {
         return repository.findById(id)
                 .map(lutador -> {
-                    // Atualizando todos os campos baseados na sua classe Lutador.java
-                    lutador.setNome(lutadorAtualizado.getNome());
-                    lutador.setCategoria(lutadorAtualizado.getCategoria());
-                    lutador.setApelido(lutadorAtualizado.getApelido());
-                    lutador.setArte(lutadorAtualizado.getArte());
+                    if(lutadorAtualizado.getNome().equals("string") || lutadorAtualizado.getNome() == null){
+                        lutadorAtualizado.getNome();
+                    }else{
+                        lutador.setNome(lutadorAtualizado.getNome());
+                    }
+                    
+                    if(lutadorAtualizado.getCategoria().equals("string") || lutadorAtualizado.getCategoria() == null){
+                        lutadorAtualizado.getCategoria();
+                    }else{
+                        lutador.setCategoria(lutadorAtualizado.getCategoria());
+                    }
+                    
+                    if(lutadorAtualizado.getApelido().equals("string") || lutadorAtualizado.getApelido() == null){
+                        lutadorAtualizado.getApelido();
+                    }else{
+                        lutador.setApelido(lutadorAtualizado.getApelido());
+                    }
+                    
+                    if(lutadorAtualizado.getArte().equals("string") || lutadorAtualizado.getArte() == null){
+                        lutadorAtualizado.getArte();
+                    }else{
+                        lutador.setArte(lutadorAtualizado.getArte());
+                    }// Atualizando todos os campos baseados na sua classe Lutador.java
 
                     Lutador salvo = repository.save(lutador);
                     return ResponseEntity.ok(salvo);
