@@ -1,9 +1,6 @@
 package demo.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity // <-- A anotação DEVE ficar aqui, no topo da classe
 public class Lutador {
@@ -15,6 +12,9 @@ public class Lutador {
     private String nome;
     private String categoria;
     private String apelido;
+
+    @Column(name = "arte")
+    @Convert(converter = ArteCriptoConverter.class)
     private String arte;
 
     // O JPA exige um construtor vazio para funcionar
