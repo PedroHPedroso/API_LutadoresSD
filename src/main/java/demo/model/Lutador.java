@@ -9,11 +9,10 @@ public class Lutador {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
+    @Convert (converter = ArteCriptoConverter.class)
     private String nome;
     private String categoria;
     private String apelido;
-
-    @Column(name = "arte")
     @Convert(converter = ArteCriptoConverter.class)
     private String arte;
 

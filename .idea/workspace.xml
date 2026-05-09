@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3c26e49-0997-494c-bf22-7d24263bb2e6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/model/ArteCriptoConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.enxample" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/model/ArteCriptoConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/model/ArteCriptoConverter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/demo/model/Lutador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/model/Lutador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +38,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/PedroHPedroso/API_LutadoresSD.git&quot;,
-    &quot;accountId&quot;: &quot;1cc4d885-dde2-4132-a049-1b6af679fd2b&quot;
+    &quot;accountId&quot;: &quot;ad19312d-20cc-47a6-afa7-9598cf541432&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -59,13 +63,6 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.32098.37" />
-      </set>
-    </attachedChunks>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="b3c26e49-0997-494c-bf22-7d24263bb2e6" name="Changes" comment="" />

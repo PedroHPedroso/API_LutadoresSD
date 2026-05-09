@@ -1,6 +1,7 @@
 # Arquivos compilados
 target/
 *.class
+.env
 
 # Arquivos do IntelliJ IDEA
 .idea/

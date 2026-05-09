@@ -10,8 +10,8 @@ import java.util.Base64;
 public class ArteCriptoConverter implements AttributeConverter<String, String> {
 
     private static final String ALGORITHM = "AES";
-    // A chave precisa ter exatamente 16 caracteres
-    private static final String SECRET_KEY = "faculdade-treino";
+
+    private static final String SECRET_KEY = System.getenv("CHAVE_AES_SISTEMA");;
 
     @Override
     public String convertToDatabaseColumn(String arteOriginal) {

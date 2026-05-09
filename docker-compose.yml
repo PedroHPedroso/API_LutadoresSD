@@ -4,8 +4,8 @@ services:
     container_name: postgres-db
     environment:
       POSTGRES_DB: uenp_bet
-      POSTGRES_USER: leandro
-      POSTGRES_PASSWORD: 12345
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASS}
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U leandro -d uenp_bet"]
       interval: 5s
@@ -25,5 +25,6 @@ services:
     environment:
       # Use o nome do serviço 'postgres-db', não 'db'
       SPRING_DATASOURCE_URL: jdbc:postgresql://postgres-db:5432/uenp_bet
-      SPRING_DATASOURCE_USERNAME: leandro
-      SPRING_DATASOURCE_PASSWORD: 12345
+      SPRING_DATASOURCE_USERNAME: ${DB_USER}
+      SPRING_DATASOURCE_PASSWORD: ${DB_PASS}
+      CHAVE_AES_SISTEMA: ${CHAVE_AES}
