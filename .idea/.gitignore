@@ -1,13 +1,34 @@
-# Arquivos compilados
+# ========================
+# Arquivos compilados / Build
+# ========================
 target/
 *.class
-.env
+*.jar
+*.war
 
-# Arquivos do IntelliJ IDEA
+# ========================
+# Segredos e Configurações Locais
+# ========================
+.env
+application-local.properties
+
+# ========================
+# Arquivos do IntelliJ IDEA / IDEs
+# ========================
 .idea/
 *.iml
 *.iws
+.vscode/
 
+# ========================
 # Arquivos de log e banco de dados local
+# ========================
 *.log
 lutadores.db
+postgres-data/
+
+# ========================
+# Arquivos de Sistema Operacional
+# ========================
+.DS_Store
+Thumbs.db
