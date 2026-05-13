@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Teste de Criptografia Híbrida</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsencrypt/3.3.2/jsencrypt.min.js"></script>
+</head>
+<body style="font-family: Arial; padding: 20px;">
+<h2>Teste: Criar Lutador Seguro</h2>
+
+<button onclick="enviarLutadorSeguro()">Testar Envio Seguro</button>
+<pre id="resultado" style="background: #eee; padding: 10px; margin-top: 20px;"></pre>
+
+<script>
+    async function enviarLutadorSeguro() {
+        const log = document.getElementById('resultado');
+        log.innerText = "A iniciar processo...\n";
+
+        // 1. Obter a chave pública do teu servidor
+        log.innerText += "1. A pedir chave pública...\n";
+        const resChave = await fetch('/api/seguranca/chave-publica');
+        const chavePublicaBase64 = await resChave.text();
+        // Descodifica o Base64 para o formato PEM que o JSEncrypt usa
+        const chavePublicaPem = `-----BEGIN PUBLIC KEY-----\n${chavePublicaBase64}\n-----END PUBLIC KEY-----`;
+
+        // 2. Os dados que queremos enviar
+        const lutador = {
+            nome: "Anderson Silva",
+            categoria: "Peso Médio",
+            apelido: "Spider",
+            arte: "Muay Thai"
+        };
+        const jsonLutador = JSON.stringify(lutador);
+
+        // 3. Gerar Chave AES temporária (exatamente 16 caracteres)
+        const caracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        let chaveAesStr = '';
+        for (let i = 0; i < 16; i++) {
+        chaveAesStr += caracteres.charAt(Math.floor(Math.random() * caracteres.length));
+        }
+        const chaveAes = CryptoJS.enc.Utf8.parse(chaveAesStr);
+
+        // 4. Encriptar o JSON do Lutador com AES (Forçando o modo ECB)
+        const dadosEncriptados = CryptoJS.AES.encrypt(jsonLutador, chaveAes, {
+        mode: CryptoJS.mode.ECB,
+        padding: CryptoJS.pad.Pkcs7
+        }).toString();
+
+        // 5. Encriptar a chave AES com a chave RSA do servidor
+        const rsa = new JSEncrypt();
+        rsa.setPublicKey(chavePublicaPem);
+        const chaveAesEncriptadaRsa = rsa.encrypt(chaveAesStr);
+
+        // 6. Montar o objeto RequisicaoSegura
+        const requisicao = {
+            chaveSessao: chaveAesEncriptadaRsa,
+            dados: dadosEncriptados
+        };
+
+        // 7. Enviar para a tua API!
+        log.innerText += "4. A enviar pedido POST seguro...\n";
+        const resPost = await fetch('/api/lutadores/seguro', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(requisicao)
+        });
+
+        if(resPost.ok) {
+            const salvo = await resPost.json();
+            log.innerText += "\nSUCESSO! Lutador gravado: " + JSON.stringify(salvo);
+        } else {
+            log.innerText += "\nERRO! Verifica os logs do Spring Boot.";
+        }
+    }
+</script>
+</body>
+</html>

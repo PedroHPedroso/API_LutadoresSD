@@ -1,0 +1,8 @@
+demo\service\CryptoService.class
+demo\controller\SegurancaController.class
+demo\Main.class
+demo\controller\LutadorRepository.class
+demo\controller\LutadorController.class
+demo\model\Lutador.class
+demo\dto\RequisicaoSegura.class
+demo\model\ArteCriptoConverter.class
