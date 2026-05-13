@@ -3,11 +3,11 @@ services:
     image: postgres:15
     container_name: postgres-db
     environment:
-      POSTGRES_DB: uenp_bet
+      POSTGRES_DB: ${DB_NAME}
       POSTGRES_USER: ${DB_USER}
       POSTGRES_PASSWORD: ${DB_PASS}
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U leandro -d uenp_bet"]
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER} -d ${DB_NAME}"]
       interval: 5s
       timeout: 5s
       retries: 5

@@ -11,7 +11,7 @@ public class ArteCriptoConverter implements AttributeConverter<String, String> {
 
     private static final String ALGORITHM = "AES";
 
-    private static final String SECRET_KEY = System.getenv("CHAVE_AES_SISTEMA");;
+    private static final String SECRET_KEY = System.getenv("CHAVE_AES_SISTEMA");
 
     @Override
     public String convertToDatabaseColumn(String arteOriginal) {
